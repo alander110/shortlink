@@ -19,4 +19,8 @@ spring:
 
 short-link:
   group:
-    max-num: 50
+    max-num: 20
+  flow-limit:
+    enable: false
+    time-window: 1
+    max-access-count: 20
