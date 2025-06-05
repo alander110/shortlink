@@ -20,6 +20,7 @@ import com.xw.shortlink.admin.dto.req.UserUpdateReqDTO;
 import com.xw.shortlink.admin.dto.resp.UserActualRespDTO;
 import com.xw.shortlink.admin.dto.resp.UserLoginRespDTO;
 import com.xw.shortlink.admin.dto.resp.UserRespDTO;
+import com.xw.shortlink.admin.service.GroupService;
 import com.xw.shortlink.admin.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.redisson.api.RBloomFilter;
@@ -51,6 +52,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, UserDO> implements 
     private final RBloomFilter<String> userRegisterCachePenetrationBloomFilter;
     private final RedissonClient redissonClient;
     private final StringRedisTemplate stringRedisTemplate;
+    private final GroupService groupService;
     /**
      * 通过用户名获取
      *
@@ -100,8 +102,8 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, UserDO> implements 
             if (inserted < 1) {
                 throw new ClientException(USER_SAVE_ERROR);
             }
-            //2.2、添加默认分组TODO
-
+            //2.2、添加默认分组
+            groupService.saveGroup(userRegisterReqDTO.getUsername(),"默认分组");
             //2.3、添加到布隆过滤器
             userRegisterCachePenetrationBloomFilter.add(userRegisterReqDTO.getUsername());
         } catch (Exception e) {
