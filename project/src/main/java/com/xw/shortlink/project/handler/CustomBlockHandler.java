@@ -18,9 +18,9 @@
 package com.xw.shortlink.project.handler;
 
 import com.alibaba.csp.sentinel.slots.block.BlockException;
-import com.nageoffer.shortlink.project.common.convention.result.Result;
-import com.nageoffer.shortlink.project.dto.req.ShortLinkCreateReqDTO;
-import com.nageoffer.shortlink.project.dto.resp.ShortLinkCreateRespDTO;
+import com.xw.shortlink.project.common.convention.result.Result;
+import com.xw.shortlink.project.dto.req.ShortLinkCreateReqDTO;
+import com.xw.shortlink.project.dto.resp.ShortLinkCreateRespDTO;
 
 /**
  * 自定义流控策略

@@ -19,10 +19,10 @@ package com.xw.shortlink.project.common.web;
 
 import cn.hutool.core.collection.CollectionUtil;
 import cn.hutool.core.util.StrUtil;
-import com.nageoffer.shortlink.project.common.convention.errorcode.BaseErrorCode;
-import com.nageoffer.shortlink.project.common.convention.exception.AbstractException;
-import com.nageoffer.shortlink.project.common.convention.result.Result;
-import com.nageoffer.shortlink.project.common.convention.result.Results;
+import com.xw.shortlink.project.common.convention.errorcode.BaseErrorCode;
+import com.xw.shortlink.project.common.convention.exception.AbstractException;
+import com.xw.shortlink.project.common.convention.result.Result;
+import com.xw.shortlink.project.common.convention.result.Results;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;

@@ -17,7 +17,7 @@
 
 package com.xw.shortlink.project.common.convention.exception;
 
-import com.nageoffer.shortlink.project.common.convention.errorcode.IErrorCode;
+import com.xw.shortlink.project.common.convention.errorcode.IErrorCode;
 import lombok.Getter;
 import org.springframework.util.StringUtils;
 

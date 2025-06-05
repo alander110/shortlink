@@ -17,7 +17,7 @@
 
 package com.xw.shortlink.project.config;
 
-import com.nageoffer.shortlink.project.common.biz.user.UserTransmitInterceptor;
+import com.xw.shortlink.project.common.biz.user.UserTransmitInterceptor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;

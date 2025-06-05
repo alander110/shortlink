@@ -26,7 +26,7 @@ import java.net.URI;
 import java.util.Date;
 import java.util.Optional;
 
-import static com.nageoffer.shortlink.project.common.constant.ShortLinkConstant.DEFAULT_CACHE_VALID_TIME;
+import static com.xw.shortlink.project.common.constant.ShortLinkConstant.DEFAULT_CACHE_VALID_TIME;
 
 /**
  * 短链接工具类
